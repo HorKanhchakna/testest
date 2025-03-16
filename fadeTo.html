@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".to-btn").click(function () {
+              $("p.none").fadeTo("fast",0);
+              $("p.partial").fadeTo("slow",0.5);
+              $("p.complete").fadeTo(2000,1);
+            });
+          });
+    </script>
+
+    <style>
+        p{
+            background-color: aquamarine;
+        }
+    </style>
+
+</head>
+<body>
+    <button type="button" class="to-btn">Show Paragraph</button>
+    <p class="none">This is a paragraph.</p>
+    <p class="partial">This is another paragraph.</p>
+    <p class="complete">This is one more paragraph.</p>
+</body>
+</html>

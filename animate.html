@@ -1,0 +1,111 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        img{
+            position: relative;
+            width: 300px;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("img").animate({
+                    left:1000
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <button type="button">Start Animation</button>
+    <p><img src="/2.webp" alt=""></p>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin-top: 30px;
+            position: relative; 
+        }
+        img{
+            position: relative;
+            width: 300px;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("img").animate({
+                    left:1000
+                });
+            });
+        });
+    </script>
+
+    <!-- <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".box")
+                .animate({width:"200px"})
+                .animate({height:"200px"})
+                .animate({marginleft:"150px"})
+                .animate({borderWidth:"10px"})
+                .animate({opacity:0.5})
+            });
+        });
+        
+    </script> -->
+
+    <!-- <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".box")
+                .animate({width:'toggle'})
+                
+            });
+        });
+    </script> -->
+
+    <!-- <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".box")
+                .animate({
+                    top:"+=50px",
+                    left:"+=50px",
+                    width:"+=50px",
+                    height:"+=50"
+                });
+                
+            });
+        });
+    </script> -->
+</head>
+<body>
+    <button type="button">Start Animation</button>
+    <p><img src="/2.webp" alt=""></p>
+
+    <!-- <button type="button"> Start Animation</button>
+    <div class="box"></div>
+
+    <button type="button"> Toggle Animation</button>
+    <div class="box"></div> -->
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".hide-btn").click(function(){
+                $("p").hide(); // Corrected: added quotes around "p"
+            });
+    
+            $(".show-btn").click(function(){
+                $("p").show();
+            });
+        });
+    </script>
+    
+</head>
+<body>
+    <button type="button" class="hide-btn">Hide Paragraphs</button>
+    <button type="button" class="show-btn">Show Paragraphs</button>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph</p>
+</body>
+</html>

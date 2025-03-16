@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        select{
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 20px;
+            color: green;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function(){
+           $("select").change(function(){
+            var selectedOption = $(this).find(":selected").val();
+            alert("You choose City : " + selectedOption);
+           });
+        });
+    </script>
+
+</head>
+<body>
+    <form >
+        <label>City:</label>
+        <select>
+            <option>Phnom Penh</option>
+            <option>Kandal</option>
+            <option>Takao</option>
+            <option>KamPot</option>
+        </select>
+    </form>
+    <p><strong>Note:</strong>select any value from the dropdown select and see the result.</p>
+</body>
+</html>

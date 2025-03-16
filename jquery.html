@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Effects</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="button" value="Hide/Show" id="btn">
+    <input type="button" value="Click Slide Up" id="btnup">
+    <input type="button" value="Click Slide Down" id="btndown">
+    <input type="button" value="Slide/Hide/Show" id="btnshs">
+    <input type="button" value="Fade Toggle" id="btntoggle">
+
+    <div id="box">Hello, jQuery!</div>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("#box").toggle(); 
+            });
+
+            $("#btnup").click(function(){
+                $("#box").slideUp(); 
+            });
+
+            $("#btndown").click(function(){
+                $("#box").slideDown(); 
+            });
+
+            $("#btnshs").click(function(){
+                $("#box").slideToggle();
+            });
+
+            $("#btntoggle").click(function(){
+                $("#box").fadeToggle(); 
+            });
+        });
+    </script>
+
+</body>
+</html>

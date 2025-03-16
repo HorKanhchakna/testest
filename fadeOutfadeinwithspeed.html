@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".out-btn").click(function () {
+              $("p.very-fast").fadeOut();
+              $("p.normal").fadeOut();
+              $("p.fast").fadeOut();
+              $("p.slow").fadeOut();
+              $("p.very-slow").fadeOut();
+            });
+    
+            $(".in-btn").click(function () {
+              $("p.very-fast").fadeIn();
+              $("p.normal").fadeIn();
+              $("p.fast").fadeIn();
+              $("p.slow").fadein();
+              $("p.very-slow").fadeIn();
+            });
+          });
+    </script>
+
+</head>
+<body>
+    <button type="button" class="out-btn">fade out Paragraph</button>
+    <button type="button" class="in-btn">fade in Paragraph</button>
+    <p class="very-fast">This paragraph will fade out/in with very fast speed.</p>
+    <p class="normal">This paragraph will fade out/in with default speed.</p>
+    <p class="fast">This paragraph will fade out/in fast speed.</p>
+    <p class="slow">This paragraph will fade out/in slow speed.</p>
+    <p class="very-slow">This paragraph will fade out/in with very slow speed.</p>
+</body>
+</html>
